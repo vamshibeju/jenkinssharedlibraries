@@ -1,7 +1,5 @@
 def call(){
-import jenkins.*
-import hudson.*
-	import java.io.*
+
 def fileWriter = new FileWriter("test.xml")
 	fileWriter.setExecutable(true, false);
 
