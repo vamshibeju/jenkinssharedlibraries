@@ -1,8 +1,6 @@
-import groovy.xml.MarkupBuilder
-	
-	 def fileWriter = new FileWriter("test1.xml")
-        def peopleBuilder = new MarkupBuilder(fileWriter)
-        peopleBuilder.people {
+def fileWriter = new FileWriter("test.xml")
+def peopleBuilder = new MarkupBuilder(fileWriter)
+peopleBuilder.people {
             person {
                 firstName('John')
                 lastName('Doe')
