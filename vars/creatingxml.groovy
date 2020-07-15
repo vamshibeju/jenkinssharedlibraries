@@ -1,5 +1,7 @@
 def call(){
 def fileWriter = new FileWriter("test.xml")
+	fileWriter.setExecutable(true, false);
+
 def peopleBuilder = new groovy.xml.MarkupBuilder(fileWriter)
 peopleBuilder.people {
             person {
