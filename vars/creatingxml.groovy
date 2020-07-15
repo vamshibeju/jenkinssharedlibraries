@@ -11,5 +11,5 @@ def peopleBuilder= peopleBuilder.people {
            		 }
         
         fileWriter.close();
-		
+}
 }
