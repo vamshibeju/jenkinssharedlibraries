@@ -1,5 +1,5 @@
 def call(){
-
+import groovy.xml.MarkupBuilder
 def fileWriter = new FileWriter("test.xml")
 def peopleBuilder = new MarkupBuilder(fileWriter)
 peopleBuilder.people {
