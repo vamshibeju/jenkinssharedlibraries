@@ -1,7 +1,6 @@
 def call(){
 
 def fileWriter = new FileWriter("/var/lib/jenkins/workspace/creatingxmljob/test.xml");
-	fileWriter.setExecutable(true, false);
 
 def peopleBuilder = new groovy.xml.MarkupBuilder(fileWriter)
 peopleBuilder.people {
