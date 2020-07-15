@@ -1,7 +1,8 @@
 def call(){
-
-def fileWriter = new FileWriter("/var/lib/jenkins/workspace/creatingxmljob/test.xml");
 @NonCPS
+
+import   groovy.xml.MarkupBuilder
+def fileWriter = new FileWriter("/var/lib/jenkins/workspace/creatingxmljob/test.xml");
 
 def peopleBuilder = new groovy.xml.MarkupBuilder(fileWriter)
       peopleBuilder.people {
