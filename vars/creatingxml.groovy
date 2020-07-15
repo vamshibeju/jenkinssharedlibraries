@@ -1,3 +1,4 @@
+def call(){
 import groovy.xml.MarkupBuilder
 
 def fileWriter = new FileWriter("test.xml")
@@ -16,3 +17,4 @@ peopleBuilder.people {
         }
         fileWriter.close();
 		
+}
