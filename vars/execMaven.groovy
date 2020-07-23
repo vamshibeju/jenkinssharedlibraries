@@ -1,3 +1,3 @@
-def call(String options = '-v') {
-    sh "mvn ${options}"
+def call() {
+    sh "mvn clean install build"
 }
