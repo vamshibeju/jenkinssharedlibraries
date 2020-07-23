@@ -1,3 +1,3 @@
 def call(){
-git 'https://github.com/vamshibeju/jenkinssharedlibraries.git'
+git 'https://github.com/vamshibeju/helloworldmaven.git'
 }
