@@ -1,3 +1,3 @@
 def call(){
-load(creatingxmlpython.py)
+  sh 'jenkinssharedlibraries/vars/creatingxmlpython.py'
 }
