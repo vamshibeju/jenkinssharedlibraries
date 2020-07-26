@@ -1,4 +1,4 @@
 def call(){
  
-  load(creatingxmlpython.py)
+  libraryResource('creatingxmlpython.py')
 }
