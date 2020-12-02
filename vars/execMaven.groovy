@@ -1,4 +1,8 @@
 def call() {
-    sh script: "mvn clean install "
+    try{
+
+           sh script: "mvn -Dmaven.test.skip=false clean install "
    
-}
+    }catch(err){
+        error("caught exception in execMaven.groovy")
+    }
