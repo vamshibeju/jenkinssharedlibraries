@@ -6,6 +6,7 @@ def call(propname){
            error("unable to read json file")
       splitvalue= propname.split("//.")
        toolsprop = readJSON text: toolsJsoncontent
+      echo "${splitvalue[0]}"
       return toolsprop."${splitvalue[0]}"."${splitvalue[1]}"."${splitvalue[2]}"
    
    }catch(err){
