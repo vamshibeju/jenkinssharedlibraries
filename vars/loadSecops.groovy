@@ -4,7 +4,7 @@ try{
    def toolsJsoncontent = libraryResource "globaltools.json"
    if (toolsJsoncontent == null)
         error("unable to read json file")
-    toolsprop= readJson text: toolsJsoncontent
+    toolsprop= readJSON text: toolsJsoncontent
     return toolsprop."${propname}"
 }catch(err){
     error("caught exception in loadsecops.groovy file")
