@@ -2,7 +2,8 @@
   "whitehat":{
       "dev":{
           "endpoint": "url its working"
-          }
+          },
+      "test" : "fetched under whitehat successfully"
   },
   "value" : "fetched successfully"
 }
