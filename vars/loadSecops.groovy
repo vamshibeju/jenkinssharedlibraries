@@ -1,0 +1,13 @@
+def call(propname){
+try{
+   echo "loadsecops groovy execution"
+   def toolsJsoncontent = libraryResource "globaltools.json"
+   if (toolsJsoncontent == null)
+        error("unable to read json file")
+    toolsprop= readJson text: toolsJsoncontent
+    return toolsprop."${propname}"
+}catch(err){
+    error("caught exception in loadsecops.groovy file")
+}
+
+}
