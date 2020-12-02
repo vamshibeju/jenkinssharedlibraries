@@ -2,6 +2,7 @@
   "whitehat":{
       "dev":{
           "endpoint": "url its working"
-          
-      }
+          }
+   "value": "fetched successfully"
+  }
 }
