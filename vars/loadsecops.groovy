@@ -1,4 +1,3 @@
-import groovy.json
 def call(propname){
    try{
       echo "loadsecops groovy execution"
