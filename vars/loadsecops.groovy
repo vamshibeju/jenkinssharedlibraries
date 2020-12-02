@@ -5,7 +5,7 @@ def call(propname){
       if (toolsJsoncontent == null)
            error("unable to read json file")
        toolsprop = readJSON text: toolsJsoncontent
-       return toolsprop."${propname}"
+       return toolsprop.whitehat.test
    
    }catch(err){
        error("caught exception in loadsecops.groovy file")
