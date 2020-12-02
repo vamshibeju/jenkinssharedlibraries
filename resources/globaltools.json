@@ -3,6 +3,6 @@
       "dev":{
           "endpoint": "url its working"
           }
-   "value": "fetched successfully"
+   "value" : "fetched successfully"
   }
 }
