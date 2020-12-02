@@ -4,8 +4,9 @@ def call(propname){
       def toolsJsoncontent = libraryResource "globaltools.json"
       if (toolsJsoncontent == null)
            error("unable to read json file")
+      splitvalue= propname.split("//.")
        toolsprop = readJSON text: toolsJsoncontent
-       return toolsprop.whitehat.dev.endpoint
+      return toolsprop."${splitvalue[0]}"."${splitvalue[1]}"."${splitvalue[2]}"
    
    }catch(err){
        error("caught exception in loadsecops.groovy file")
