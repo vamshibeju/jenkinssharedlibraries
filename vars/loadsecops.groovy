@@ -4,7 +4,7 @@ def call(propname){
       def toolsJsoncontent = libraryResource "globaltools.json"
       if (toolsJsoncontent == null)
            error("unable to read json file")
-      splitvalue= propname.split("//.")
+      splitvalue= propname.split("\\.")
        toolsprop = readJSON text: toolsJsoncontent
       echo "${splitvalue[0]}"
       return toolsprop."${splitvalue[0]}"."${splitvalue[1]}"."${splitvalue[2]}"
