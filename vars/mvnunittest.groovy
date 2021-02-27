@@ -3,7 +3,8 @@ def call(){
       echo "start of unittests"
       //def testtrendpath= ""
       //junit "${testtrendpath}"
-      mvn test
+       sh "mvn test"
    }catch(err){
       error("caught exception in mvnunittest.groovy")
   }
+}
